@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=header, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Delta Music</h1>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="Support.html">Support</a></li>
+                <li> <a href="Premium.html">Premium</a></li>
+            </ul>
+            <img src="img/search icon.png" alt="">
+            <div><input type="text" name="search bar" id="searchbar" placeholder="Search"></div>
+        </nav>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Adding a new song</h1>
+        </div>
+        <div class="h1">Song name<input type="text" name="song name" id="songname"></div>
+        <div class="h1">Date released <input type="date" name="date released" id="datereleased"></div>
+        <div class="h1">Art work <button>Upload image</button></div>
+        <div class="hn">
+            <div class="h2"> Artists <select name="Artist" id="Artists1">
+                    <option value="0">Search</option>
+                    <option value="1">Eminem</option>
+                    <option value="2">Shakira</option>
+                    <option value="3">Doja cat</option>
+                    <option value="4">Adele</option>
+                    <option value="5">Ariana Grande</option>
+                </select>
+            </div>
+
+            <button id="addartist" onclick="openPopup()"> + Add Artist</button>
+        </div>
+        <div class="popup" id="popupe">
+            <button id="closebtn" >X</button>
+            <h4>Add Artist</h4>
+            <div>Artist name<input type="text" name="artist name" id="artistname"></div>
+            <div>Date of birth <input type="date" name="date of birth" id="dob"></div>
+            <div>Bio <input type="text" id="bio"> </div>
+            <div class="cdbuttons">
+                <button >Cancel</button>
+                <button>Save</button>
+            </div>
+        </div>
+        <script>
+            let popupe = document.getElementsById("popup");
+           
+            function openPopup(){
+                popup.classList.add("openppup");
+
+            }
+            function closePopup() {
+                popup.classList.remove("openppup");
+
+                
+            }
+        </script>
+        <div class="scbuttons">
+            <button>Cancel</button>
+            <button>Save</button>
+        </div>
+    </main>
+    
+</body>
+
+</html>
